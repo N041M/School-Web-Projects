@@ -1,2 +1,2 @@
-# School-Web-Projects
+# School-Projects
 my school projects repo
