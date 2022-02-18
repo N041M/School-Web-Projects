@@ -1,0 +1,114 @@
+:root {
+  --spacer--mobile: 25px;
+  --spacer--desktop: 50px;
+}
+
+/** General styles **/
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+}
+
+h1,
+h2 {
+  color: var(--red);
+}
+
+ul {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header>img,
+footer>.background {
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo-name {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 200px;
+}
+
+.quote__color {
+  position: absolute;
+  margin: auto;
+  font-weight: 900;
+  background-color: rgba(38, 38, 38, 0.7);
+  border-radius: 5px;
+}
+
+.quote {
+  margin: 0;
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.3em;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+header>nav>ul {
+  justify-content: space-evenly;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer>ul {
+  flex-direction: column;
+}
+
+/** Text styles **/
+
+h2 {
+  font-weight: 900;
+}
+
+header>nav>ul>li {
+  font-weight: 900;
+}
+
+/** Parallax **/
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-img1 {
+  background-image: url(../img/content_EN_Tezzeret_6_Gallery.jpg);
+}
+
+.bg-img2 {
+  background-image: url(../img/Urza-Lord-High-Artificer-2-Modern-Horizons-MtG-Art.jpg);
+}
+
+/** Carousel **/
