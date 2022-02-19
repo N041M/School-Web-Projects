@@ -197,7 +197,7 @@
         min-width: 70vw;
     }
 
-    nav:focus {
+    nav:focus + ul {
         display: block;
     }
 }
