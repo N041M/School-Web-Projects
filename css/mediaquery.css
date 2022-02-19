@@ -86,6 +86,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+    nav {
+        padding-top:  var(--spacer--mobile);
+    }
+
     .parallax {
         min-height: 400px;
     }
@@ -130,7 +134,7 @@
 
 /** hamburger menu breakoff **/
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
 
     nav {
         cursor: pointer;
@@ -176,7 +180,7 @@
         transform: rotate(-40deg) translateY(-50%);
     }
 
-    header>nav>ul {
+    .hidden {
         display: none;
         position: absolute;
         right: 0;
@@ -184,22 +188,17 @@
         flex-direction: column;
         z-index: 3;
         background: var(--red);
-    }
-
-    header>nav>ul {
         padding-bottom: var(--spacer--mobile);
         border-radius: 5px 0 0 5px;
     }
 
-    header>nav>ul>li {
+    .hidden>li {
         padding: var(--spacer--mobile) var(--spacer--mobile) 0 var(--spacer--mobile);
         text-align: center;
         min-width: 70vw;
     }
 
-
-    /* why isnt this working?????????? */
-    nav:focus + ul {
-        display: block;
+    nav:focus > ul:first-of-type.hidden {
+    display: inline-block;
     }
 }
