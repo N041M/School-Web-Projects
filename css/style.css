@@ -1,6 +1,6 @@
 :root {
   --spacer--mobile: 25px;
-  --spacer--desktop: 50px;
+  --spacer--desktop: 250px;
 }
 
 /** General styles **/
@@ -82,6 +82,11 @@ footer {
 
 footer>ul {
   flex-direction: column;
+}
+
+.hidden>li>a:hover {
+  color: var(--black);
+  transition: ease .3s;
 }
 
 /** Text styles **/
