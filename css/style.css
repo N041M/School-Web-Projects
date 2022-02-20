@@ -116,3 +116,10 @@ header>nav>ul>li {
 .bg-img2 {
   background-image: url(../img/Urza-Lord-High-Artificer-2-Modern-Horizons-MtG-Art.jpg);
 }
+
+.background {
+  background-image: url(/img/tidespout-tyrant-134.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% -10%;
+}
